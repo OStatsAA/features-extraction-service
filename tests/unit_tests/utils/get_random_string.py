@@ -12,4 +12,4 @@ def get_random_string(length):
         str: Randomly generated string.
     """
     letters = string.ascii_lowercase
-    return ''.join(random.choice(letters) for i in range(length))
+    return ''.join(random.choice(letters) for _ in range(length))

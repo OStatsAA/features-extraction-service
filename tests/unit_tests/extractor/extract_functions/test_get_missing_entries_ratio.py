@@ -15,7 +15,7 @@ def test_should_flag_empty_strings_as_missing_entries():
     assert ratio == expected_ratio
 
 
-def test_should_flag_NaN_as_missing_entries_in_numeric_array():
+def test_should_flag_nan_as_missing_entries_in_numeric_array():
     int_series = pd.Series(np.random.randint(99, size=200))
     expected_ratio = .25
     int_series.loc[int_series.sample(frac=expected_ratio).index] = np.NaN
