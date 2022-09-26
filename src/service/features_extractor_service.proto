@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+service FeaturesExtractorService {
+    rpc GetFeatures (GetFeaturesRequest) returns (DataFeaturesSet);
+    rpc ExtractFeatures (ExtractFeaturesRequest) returns (DataFeaturesSet);
+}
+
+message VariablesFeaturesSet {
+    bool is_quantitative = 1;
+    float missing_entries_ratio = 2;
+}
+
+message DataFeaturesSet {
+    int32 rows_count = 1;
+    int32 variables_count = 2;
+    float ratio_of_continous_variables = 3;
+    bool is_response_quantitative = 4;
+    bool is_response_dichotomous = 5;
+    map<string, VariablesFeaturesSet> variables_features_set = 6;
+}
+
+message GetFeaturesRequest {
+    string dataset_id = 1;
+}
+
+message ExtractFeaturesRequest {
+    string dataset_id = 1;
+    string response_name = 2;
+    repeated string skip_features = 3;
+}
