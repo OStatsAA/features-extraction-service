@@ -1,7 +1,0 @@
-numpy
-pandas
-tables
-grpcio-tools
-redis
-python-dotenv
-mypy-protobuf
