@@ -2,7 +2,7 @@
 
 from typing import Any
 from src.database import FeaturesRepository
-from src.extractor import FeaturesExtractor, DataFeaturesSet
+from ostatslib.features_extractor import FeaturesExtractor, DataFeaturesSet
 from src.storage import get_data_from_storage
 
 import src.service.features_extractor_service_pb2_grpc as pb2_grpc

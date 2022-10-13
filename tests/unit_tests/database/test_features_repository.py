@@ -2,7 +2,7 @@ import pytest
 import unittest.mock as mocker
 
 from src.database.features_repository import FeaturesRepository
-from src.extractor.features_set import DataFeaturesSet
+from ostatslib.features_extractor import DataFeaturesSet
 
 
 @pytest.fixture

@@ -1,6 +1,6 @@
 from redis import Redis
 
-from src.extractor.features_set import DataFeaturesSet
+from ostatslib.features_extractor import DataFeaturesSet
 
 
 class FeaturesRepository:
