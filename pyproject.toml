@@ -15,7 +15,7 @@ tables = "^3.7.0"
 grpcio-tools = "^1.49.1"
 redis = "^4.3.4"
 python-dotenv = "^0.21.0"
-mypy-protobuf = "^3.3.0"
+mypy-protobuf = "^3.4.0"
 ostatslib = "^0.1.0"
 
 [tool.poetry.group.dev.dependencies]
